@@ -1,7 +1,24 @@
 {
+  "name": "quickcart",
+  "version": "1.0.0",
+  "description": "A project for QuickCart using Vite, Tailwind CSS, and PostCSS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "postcss": "postcss styles.css -o output.css",
+    "watch:css": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.12"
-  }
+    "vite": "^4.0.0"
+  },
+  "author": "Tanvir Rahman Shuvo",
+  "license": "MIT"
 }

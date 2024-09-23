@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-xl {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  .rounded-xl {
+    border-radius: 1rem;
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #f7fafc, #edf2f7);
+  }
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickCart</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/tailwind.config.js">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="container mx-auto">
+    <h1 class="text-4xl font-bold mb-8 text-center">QuickCart</h1>
+    
+    <!-- Product Card -->
+    <div class="bg-white shadow-md rounded-lg p-6 max-w-sm mx-auto">
+      <img src="product.jpg" alt="Product Image" class="w-full h-64 object-cover rounded-lg mb-4">
+      
+      <h2 class="text-2xl font-semibold mb-4">Product Name</h2>
+      <p class="text-gray-600 mb-4">Product description goes here.</p>
+      <p class="text-xl font-bold mb-4">$25.00</p>
+      
+      <div class="flex justify-between">
+        <button id="addToCartBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Add to Cart
+        </button>
+        <button id="addToWishlistBtn" class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
+          Add to Wishlist
+        </button>
+      </div>
+      
+      <!-- Remove buttons -->
+      <div class="flex justify-between mt-4 h-1" id="removeBtns">
+        <button id="removeFromCartBtn" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          Remove from Cart
+        </button>
+        <button id="removeFromWishlistBtn" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+          Remove from Wishlist
+        </button>
+      </div>
+    </div>
+    
+    <!-- Cart and Wishlist status -->
+    <div class="mt-8">
+      <h3 class="text-xl font-bold">Cart:</h3>
+      <p id="cartStatus" class="text-gray-700">Your cart is empty.</p>
+      
+      <h3 class="text-xl font-bold mt-4">Wishlist:</h3>
+      <p id="wishlistStatus" class="text-gray-700">Your wishlist is empty.</p>
+    </div>
+  </div>
+</body>
+</html>
